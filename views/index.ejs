@@ -10,21 +10,24 @@
 <body>
     <h1 class="display-2">Sun Protector☀️</h1>
 
-
-    <!--2 INPUT FORMS-->
-    <form action="GET">
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Your Latitude</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="From -90.00 to 90.00">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Your Longitude</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="From -180.00 to 180.00">
+    <form action="/getlocation" method="POST">
+        <div class="mb-3">
+            <label for="latitudeInput" class="form-label">Your Latitude</label>
+            <input type="text" class="form-control" id="latitudeInput" name="latitude" placeholder="From -90.00 to 90.00">
+        </div>
+        <div class="mb-3">
+            <label for="longitudeInput" class="form-label">Your Longitude</label>
+            <input type="text" class="form-control" id="longitudeInput" name="longitude" placeholder="From -180.00 to 180.00">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-warning">Submit</button>
     </form>
-      </div>
 
-
-<!--SUBMIT BUTTON-->
-      <button type="button" class="btn btn-primary btn-lg btn-warning">Submit</button>
+    <div class="responseArea">
+        <% if (recommendation) { %>
+            <p><strong>Recommendation:</strong> <%= recommendation %></p>
+        <% } else { %>
+            <p><strong>Recommendation:</strong> No recommendation available.</p>
+        <% } %>
+    </div>
 </body>
 </html>
