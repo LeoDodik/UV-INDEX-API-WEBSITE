@@ -1,0 +1,15 @@
+IN ORDER TO START THE SERVER WITH THE WEBSITE FOLLOW THESE STEPS
+-----------------------------------------------------------------
+1. INSTALL FOLLOWING NPM PACKAGES:
+npm i, 
+npm i express,
+npm i ejs, 
+npm i axios
+
+2. Run the server using : nodemon index.js, in order to start the website
+
+
+ENJOY AND I AM OPEN FOR FEEDBACK
+
+I HAVEN'T SPEEN MUCH TIME ON UI SO SORRY ABOUT THAT, I WAS MORE FOCUSED ON THE FUNCTIONALITY OF THE WEBSITE.
+P.S: THE WEBSITE IS ONLY RESPONSIVE ON DESKTOP SCREENS.
